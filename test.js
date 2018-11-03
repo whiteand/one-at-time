@@ -1,4 +1,4 @@
-const oneAtTime = require("./index");
+import oneAtTime from "one-at-time";
 const wait = ms => new Promise(res => setTimeout(res, ms));
 let i = 0;
 const hardAction = async () => {
