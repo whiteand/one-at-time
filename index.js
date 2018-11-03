@@ -1,4 +1,7 @@
 const oneAtTime = action => {
+  if (typeof action !== "function") {
+    throw new TypeError("Action must be an async function!");
+  }
   let currentWork = null;
 
   const asyncAction = async (...args) => {
