@@ -1,7 +1,19 @@
 # one-at-time
 Returns action that will be run only one at time.
 
-# Example for usage
+# Install
+```
+npm install one-at-time
+...
+import oneAtTime from 'one-at-time';
+// or const oneAtTime = require('one-at-time')
+...
+const oneAtTimeFetch = oneAtTime(async (url) => { const { data: res } = await axios.get(url); return res })
+...
+const response = await oneAtTimeFetch()
+```
+
+# Example of usage
 
 ```javascript
 const oneAtTime = require("one-at-time");
