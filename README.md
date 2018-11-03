@@ -8,7 +8,7 @@ npm install one-at-time
 import oneAtTime from 'one-at-time';
 // or const oneAtTime = require('one-at-time')
 ...
-const oneAtTimeFetch = oneAtTime(async (url) => { const { data: res } = await axios.get(url); return res })
+const oneAtTimeFetch = oneAtTime(async () => { const { data: res } = await axios.get(url); return res })
 ...
 const response = await oneAtTimeFetch()
 ```
