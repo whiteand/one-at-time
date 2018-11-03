@@ -1,6 +1,6 @@
 {
   "name": "one-at-time",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Transforms async function in such async function that do action only one at time",
   "main": "index.js",
   "scripts": {

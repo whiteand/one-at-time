@@ -1,17 +1,17 @@
 const oneAtTime = action => {
   let currentWork = null;
 
-  const asyncAction = async () => {
-    const res = await action();
+  const asyncAction = async (...args) => {
+    const res = await action(...args);
     return res;
   };
 
-  return async function() {
+  return async function(...args) {
     if (currentWork) {
       const res = await currentWork;
       return res;
     }
-    currentWork = asyncAction();
+    currentWork = asyncAction(...args);
     const res = await currentWork;
     currentWork = null;
     return res;
