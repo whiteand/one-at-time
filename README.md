@@ -1,4 +1,7 @@
 # one-at-time
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/whiteand/one-at-time.svg)](https://greenkeeper.io/)
+
 Returns action that will be run only one at time.
 
 # Install
